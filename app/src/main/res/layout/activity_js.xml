@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JS">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="34dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--Quesion 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1. What is JavaScript primarily used for?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) Designing web layouts"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) Styling web pages"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Adding interactivity to web pages"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) Managing databases"
+                android:textSize="16dp"
+                >
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+            <!--Quesion 2-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2. Which of the following is a feature of JavaScript?"
+                android:textSize="19dp"></TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) JavaScript is a server-side programming language."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" B) JavaScript is loosely typed and dynamic."
+                android:textSize="16dp">
+            </CheckBox>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) JavaScript does not support functions."
+                android:textSize="16dp"></CheckBox>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) JavaScript runs only on Chrome."
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 3-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3. What does the term (hoisting) refer to in JavaScript?"
+                android:textSize="19dp"></TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) Raising error messages"
+                android:textSize="16dp"></CheckBox>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) Moving function and variable declarations to the top of their scope"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Increasing the size of an array"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) Modifying the scope of a variable"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 4-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="4. Which of the following is true about const in JavaScript?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) The value of a const variable can never be changed."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) const is block-scoped."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) const variables can be redeclared."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) const can only be used for strings."
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 5-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5. Which of the following is NOT a valid JavaScript data type?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) string"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) boolean"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) character"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) undefined"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 6 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6. What is the purpose of the this keyword in JavaScript?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) It refers to the global object always."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) It refers to the current object."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) It is used to declare variables."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) It refers to the previous function called."
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 7-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="7. Which of the following is a JavaScript framework/library?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) Angular"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) React"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Vue"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) All of the above"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 8-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8. What is the role of a JavaScript engine in a browser?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) To render HTML and CSS"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) To parse and execute JavaScript code"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) To manage network requests"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) To handle server-side operations"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+
+            <!--Quesion 9-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="9. Which of the following is NOT a feature of JavaScript?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) Asynchronous capabilities"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) Object-oriented programming"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Strict typing"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) Event-driven programming"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+
+
+            <!--Quesion 10-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="10. What is the difference between == and === in JavaScript?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) Both check for equality without considering type."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) == checks for value equality, while === checks for value and type equality."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) === is used only for strings."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) There is no difference between == and ===."
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+            </Space>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

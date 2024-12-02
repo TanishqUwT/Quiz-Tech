@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cpp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="34dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--Quesion 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1. What is the main purpose of C++?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) Web development"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) System programming and application development"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Database management"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) Designing UI"
+                android:textSize="16dp"
+                >
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+            <!--Quesion 2-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2. Which of the following is a feature of C++?"
+                android:textSize="19dp"></TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) It is purely procedural."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) It supports object-oriented programming."
+                android:textSize="16dp">
+            </CheckBox>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) It does not support low-level programming."
+                android:textSize="16dp"></CheckBox>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) It is not backward compatible with C."
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 3-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3. What does the term (polymorphism) mean in C++?"
+                android:textSize="19dp"></TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) Using multiple classes in a program"
+                android:textSize="16dp"></CheckBox>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) Having multiple forms of a function or operator"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Hiding data from unauthorized access"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) Overloading constructors"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 4-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="4. What is a constructor in C++?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) A special function that initializes an object"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) A function to destroy an object"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) A function that performs data hiding"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) A function used to overload operators"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 5-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5. Which of the following is true about inheritance in C++?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) A derived class inherits only private members of the base class."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) A derived class cannot override base class functions."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Inheritance allows code reusability."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) C++ does not support multiple inheritance."
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 6 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6. What is the role of the virtual keyword in C++?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) To declare a class abstract"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) To define pure virtual functions"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) To enable runtime polymorphism"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) All of the above"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 7-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="7. What is the size of an empty class in C++?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) 0 bytes"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) 1 byte"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Undefined"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) Depends on the compiler"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 8-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8. What is the difference between struct and class in C++?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) struct is used only in C, and class is used in C++."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) Members of a struct are private by default, while members of a class are public by default."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Members of a struct are public by default, while members of a class are private by default."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) There is no difference between struct and class."
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+
+            <!--Quesion 9-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="9. What does the new operator do in C++?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) Allocates memory for a variable or object dynamically"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) Deletes memory allocated dynamically"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Initializes static variables"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) Creates global variables"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+
+
+            <!--Quesion 10-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="10. Which of the following is true about friend functions in C++?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) Friend functions can access private and protected members of a class."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) Friend functions are members of the class."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Friend functions are automatically inherited by derived classes."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) Friend functions can only access public members of a class."
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+            </Space>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

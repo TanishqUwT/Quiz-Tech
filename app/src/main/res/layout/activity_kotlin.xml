@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kotlin">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="34dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--Quesion 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1. What is Kotlin primarily used for?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) Frontend web development"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) Mobile application development"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Operating system development"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) Database management"
+                android:textSize="16dp"
+                >
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+            <!--Quesion 2-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2. Which company officially supports Kotlin?"
+                android:textSize="19dp"></TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) Apple"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) Microsoft"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Google"
+                android:textSize="16dp"></CheckBox>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) Oracle"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 3-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3. What type of programming language is Kotlin?"
+                android:textSize="19dp"></TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) Procedural"
+                android:textSize="16dp"></CheckBox>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) Object-oriented"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Functional"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) Both object-oriented and functional"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 4-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="How does Kotlin handle null safety?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) It allows null values everywhere."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) It throws exceptions for null values."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) It provides built-in null safety features like nullable types."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) It does not support null values."
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 5-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5. What is the file extension for Kotlin files?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) .kot"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) .kt"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) .kotlin"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) .kl"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 6 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6. Which of the following is true about val in Kotlin?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) val is used to declare mutable variables."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) val is used to declare immutable variables."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) val can be reassigned after initialization."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) val is equivalent to static in Java."
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 7-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="7. What is a companion object in Kotlin?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) An object that is passed to a function as a parameter."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) An object used to replace static members in Kotlin."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) A global variable accessible anywhere in the program."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) A data class feature for serialization."
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 8-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8. What is the primary difference between open and final in Kotlin?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) open makes a class inheritable, while final prevents inheritance."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) open is used for declaring variables, while final is used for methods."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) open allows overriding, while final does not."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) Both A and C."
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+
+            <!--Quesion 9-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="9. What is the default visibility modifier in Kotlin?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) private"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) protected"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) internal"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) public"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+
+
+            <!--Quesion 10-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="10. How do you define a function in Kotlin?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) func"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) def"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) fun"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) function"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+            </Space>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

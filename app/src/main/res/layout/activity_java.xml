@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Java">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="34dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--Quesion 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1. What is the primary feature of Java that makes it platform-independent?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) Garbage collection"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) Bytecode"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Multithreading"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) Object-oriented design"
+                android:textSize="16dp"
+                >
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+            <!--Quesion 2-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2. Which of the following is NOT a feature of Java?"
+                android:textSize="19dp"></TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) Automatic memory management"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" B) Operator overloading"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Platform independence"
+                android:textSize="16dp"></CheckBox>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) Robust exception handling"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 3-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3. In Java, which keyword is used to inherit a class?"
+                android:textSize="19dp"></TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) implements"
+                android:textSize="16dp"></CheckBox>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) inherits"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) extends"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) override"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 4-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="4. Which of the following statements about Java is FALSE?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) Java is an object-oriented programming language."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) Java allows multiple inheritance through classes."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Java has built-in support for multithreading."
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) Java applications run on the Java Virtual Machine (JVM)."
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 5-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5. What is the purpose of the final keyword in Java?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) To declare a variable that cannot be changed"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) To prevent a method from being overridden"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) To prevent a class from being inherited"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) All of the above"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 6 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6. Which of the following is a wrapper class in Java?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) String"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) ArrayList"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Integer"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) int"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 7-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="7. What is the default value of a local variable in Java?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) null"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) 0"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) Depends on the data type"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) Local variables do not have a default value"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 8-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8. Which access modifier makes a member visible only within its own package?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) public"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) protected"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) default (no modifier)"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) private"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+
+            <!--Quesion 9-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="9. What is the purpose of the static keyword in Java?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) To create a variable shared by all instances of a class"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) To make a method callable without creating an object"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) To define a block of code executed only once when the class is loaded"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) All of the above"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+
+
+            <!--Quesion 10-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="10. Which of the following is used to handle exceptions in Java?"
+                android:textSize="19dp"
+                >
+            </TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A) throw and catch"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B) try, catch, and finally"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C) try and throw"
+                android:textSize="16dp">
+            </CheckBox>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="D) catch and throws"
+                android:textSize="16dp">
+            </CheckBox>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+            </Space>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
