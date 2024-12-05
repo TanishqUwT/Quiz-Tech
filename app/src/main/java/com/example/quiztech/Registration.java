@@ -1,54 +1,59 @@
 package com.example.quiztech;
 
-import android.content.ContentValues;
-import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class Registration extends SQLiteOpenHelper {
-    public static final String DATABASAE_NAME ="Registration";
-    public static final String TABLE_NAME ="User_Information";
-    public static final String Name ="UserName" ;
-    public static final String Pass="Password";
-    public static final String ConPass ="ConfirmPassword";
-    ;
+public class Registration extends AppCompatActivity {
 
-    public Registration( Context context) {
-        super(context, DATABASAE_NAME , null, 1);
-
-
-
-    }
-
+    Databasehelper databaseHelper;
     @Override
-    public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE " + TABLE_NAME+"(ID INTEGER PRIMARY KEY AUTOINCREMENT,Password VARCHAR,Username TEXT)");
-    }
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_registration); // Ensure the layout file exists
+        databaseHelper = new Databasehelper(this);
 
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-        db.execSQL(" DROP TABLE IF EXISTS " + TABLE_NAME);
-        onCreate(db);
-    }
+        // UI elements
+        EditText usernameField = findViewById(R.id.editTextUserName);
+        EditText passwordField = findViewById(R.id.editTextPassword);
+        EditText confirmPasswordField = findViewById(R.id.editTextConfirmPassword);
+        Button submitButton = findViewById(R.id.buttonSubmit);
 
-    public boolean insertData (String Password, String UserName , String ConfirmPassword) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues contentValues =new ContentValues();
-        contentValues.put(Pass,Password);
-        contentValues.put(Name,UserName);
-        contentValues.put(ConPass,ConfirmPassword);
-        long result =db.insert(TABLE_NAME,null,contentValues);
-        if(result == -1)
-            return false;
-        else
-            return true;
+        // Set up Submit Button
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String username = usernameField.getText().toString().trim();
+                String password = passwordField.getText().toString().trim();
+                String confirmPassword = confirmPasswordField.getText().toString().trim();
 
+                // Validate fields
+                if (username.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
+                    Toast.makeText(Registration.this, "All fields are required!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (!password.equals(confirmPassword)) {
+                    Toast.makeText(Registration.this, "Passwords do not match!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                // Insert data into database
+                boolean isInserted = databaseHelper.insertData(username, password, confirmPassword);
+                if (isInserted) {
+                    Toast.makeText(Registration.this, "Registration Successful!", Toast.LENGTH_SHORT).show();
+                    // Optionally, clear input fields
+                    usernameField.setText("");
+                    passwordField.setText("");
+                    confirmPasswordField.setText("");
+                } else {
+                    Toast.makeText(Registration.this, "Registration Failed!", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 }
