@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
-    <background android:drawable="@drawable/logo" />
+
+    <!-- Set a white background color -->
+    <background android:drawable="@android:color/white" />
+
+    <!-- Foreground image remains the same -->
     <foreground android:drawable="@drawable/logo" />
+
+    <!-- Monochrome version remains the same -->
     <monochrome android:drawable="@drawable/logo" />
 </adaptive-icon>
